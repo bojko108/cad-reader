@@ -1,0 +1,35 @@
+{
+  "name": "cad-reader",
+  "version": "0.0.1",
+  "description": "Library for converting CAD files in GeoJSON format",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.umd.js",
+  "scripts": {
+    "build": "rollup --config ./config/rollup.es.js",
+    "build-umd": "rollup --config ./config/rollup.umd.js",
+    "patch": "npm version patch --no-git-tag-version",
+    "minor": "npm version minor --no-git-tag-version",
+    "major": "npm version major --no-git-tag-version"
+  },
+  "keywords": [
+    "GIS",
+    "map",
+    "cadastre"
+  ],
+  "author": "bojko108 <bojko108@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express-fileupload": "^1.0.0-alpha.1",
+    "geojson": "^0.5.0",
+    "line-by-line": "^0.1.6"
+  },
+  "devDependencies": {
+    "express": "^4.16.3",
+    "rollup": "^0.66.0",
+    "rollup-plugin-cleanup": "^3.0.0",
+    "rollup-plugin-commonjs": "^9.1.6",
+    "rollup-plugin-css-only": "^0.4.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-uglify-es": "^0.0.1"
+  }
+}
